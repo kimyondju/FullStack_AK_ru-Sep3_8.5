@@ -37,18 +37,191 @@ body{
 }
 .wrapper{
     width: 100%;
-    font-family:'TT Lakes Compressed';
+    font-family:'TT Lakes Condensed';
     background-color: #F8F8F8;
     border-top: 1px solid #D9FFF5;
     margin-top: 5px;
+    height: auto;
+    
 }
 .swipper__block{
    margin: 16px 0 0px 16px;
+   min-width: 0;
 }
 .swiper__title{
     font-weight: 400;
     color: #7E7E82;
     font-size: 16px;
     text-transform:uppercase ;
+    width: 288px;
+    height: 48px;
+    
+}
+.swiper{
+    width: 100%;
+    
+    margin-top: 32px;
+    margin-right: 16px;
+    
+}
+.swiper-wrapper{
+  display: flex;
+  position: relative;
+ margin-bottom: 16px;
+   }
+.swiper-slide{
+    display: flex;
+    width: 240px;
+    height: 72px;
+    justify-content: end;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 0 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    
+}
+.swiper-slide::after{
+    content: '>';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    text-align: center;
+    
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    color: #FF3E79;
+    
+  
+    font-weight: 900;
+    font-size: 24px;
+    
+}
+.slide1{
+    background-image: url('./Bitmap.png');
+    background-repeat: no-repeat;
+    background-position: 16px 20px;
+    
+}
+.slide2{
+    background-image: url('./Bitmap\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    
+}
+.slide3{
+    background-image: url('./Bitmap\ \(2\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: 44px 44px ;
+}
+.slide4{
+    background-image: url('./Bitmap\ \(3\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;  
+}
+.slide5{
+    background-image: url('./Bitmap\ \(4\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.slide6{
+    background-image: url('./Bitmap\ \(5\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.slide7{
+    background-image: url('./Bitmap\ \(6\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.slide8{
+    background-image: url('./Bitmap\ \(7\).png');
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    opacity: 0,9;    
+    transition: all 0.3s; 
+    
+}
+.swiper-scrollbar{
+    display: none;
+    scrollbar-width: none;   
+}
+.btn{
+    display: none;
+}
+@media (min-width: 768px) {
+   .swiper-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-right: 0;
+    
+   }
+   .swiper{
+    margin: 0;
+   }
+   .swiper__title{
+    margin: 16px 0 0 24px;
+    width: 338px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+   }
+   .swiper-slide {
+    margin:0 0 16px 24px;
+    width: 224px;
+   }
+   .swiper-slide:not(:nth-child(-n + 6)){
+    display: none;
+   }
 
+  .swiper-scrollbar{
+    display: none;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+  .btn{
+    display: flex;
+    border: none;
+    font-family: 'TT Lakes Condensed';
+    font-weight: 500;
+    font-size: 16px;
+    color: #1B1C21;
+    margin-top: 8px;
+
+  }
+  .btn::before{
+    content: url(./expand.png);
+    text-align: center;
+    margin: 0px 9px 0 24px;
+  }
+}
+@media (min-width: 1119px) {
+    .swiper-slide {
+        display: flex;
+        width: 240px;
+    }
+    .swiper-slide:not(:nth-child(-n + 8)){
+    display: none;
+   }
 }
