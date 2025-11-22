@@ -20,3 +20,19 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+function readMore() {
+  var more = document.getElementById("more");
+  var more1 = document.getElementById("more1");
+  var btn = document.getElementById("btn");
+  if (more.style.display === "none") {
+       more.style.display = "flex";
+       more1.style.display = "flex";
+       btn.innerHTML = "Скрыть";
+  } else {
+       more.style.display = "none";
+       more1.style.display = "none";
+       btn.innerHTML = "Показать все";
+   
+  }
+}

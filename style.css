@@ -190,9 +190,10 @@ body{
     margin:0 0 16px 24px;
     width: 224px;
    }
-   .swiper-slide:not(:nth-child(-n + 6)){
+  #more, #more1, #More, #More1{
     display: none;
-   }
+  }
+
 
   .swiper-scrollbar{
     display: none;
@@ -208,6 +209,7 @@ body{
     font-size: 16px;
     color: #1B1C21;
     margin-top: 8px;
+    background-color: #F8F8F8 ;
 
   }
   .btn::before{
@@ -217,11 +219,19 @@ body{
   }
 }
 @media (min-width: 1119px) {
-    .swiper-slide {
+    .swiper-wrapper {
         display: flex;
+       
+    }
+    .swiper-slide{
+        margin: 0 0 16px 24px;
         width: 240px;
     }
-    .swiper-slide:not(:nth-child(-n + 8)){
-    display: none;
-   }
+    #more,#more1{
+        display: none;
+    }
+    #More{
+        display:  none;
+    }
+  
 }
