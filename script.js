@@ -23,8 +23,9 @@ const swiper = new Swiper('.swiper', {
 
 function readMore() {
   var more = document.getElementById("more");
-  var more1 = document.getElementById("more1");
+  var more = document.getElementById("more1");
   var btn = document.getElementById("btn");
+
   if (more.style.display === "none") {
        more.style.display = "flex";
        more1.style.display = "flex";
@@ -36,3 +37,5 @@ function readMore() {
    
   }
 }
+
+
